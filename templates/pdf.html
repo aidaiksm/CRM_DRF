@@ -1,0 +1,19 @@
+<html>
+    <body>
+    <h1> In-flight Evaluation Report </h1>
+    <p>
+    Report no. {{ report.id }}</br>
+    <span class="secondary">
+    {{ report.created_at|date:"M d, Y" }}
+    </span>
+    </p>
+    <p>
+    Submitted by {{ report.author }} for flight: {{ report.flight_num }}<br>
+    {{report.body }}<br>
+    <h4> further suggestions: </h4>
+    {{report.suggestions }}<br>
+    <h4>The flight is evaluated as: </h4>
+    {{ report.evaluation }}
+        </p>
+    </body>
+</html>
